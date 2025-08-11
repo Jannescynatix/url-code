@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animierter URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>URL Shortener 🚀</h1>
+    <p>Verwandle lange Links in kurze und wähle eine coole Ladeanimation!</p>
+    <form id="shorten-form">
+        <input type="url" id="url-input" placeholder="Füge hier deine lange URL ein..." required>
+        <div class="animation-selector">
+            <label for="animation-select">Wähle eine Animation:</label>
+            <select id="animation-select">
+                <option value="spin">Spinner</option>
+                <option value="pulse">Pulsieren</option>
+                <option value="dots">Punkte</option>
+            </select>
+        </div>
+        <button type="submit">URL kürzen</button>
+    </form>
+    <div id="result" class="hidden">
+        <p>Dein kurzer Link ist fertig!</p>
+        <div class="short-url-container">
+            <input type="text" id="short-url-output" readonly>
+            <button id="copy-button">Kopieren</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
